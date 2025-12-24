@@ -10,7 +10,11 @@ import Container from "./shared/container";
 import { useLanguage } from "./language-provider";
 
 const Introduction = () => {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+
+  const cvFile =
+    locale === "en" ? "cv-jorgenino-en.pdf" : "cv-jorgenino-es.pdf";
+  const cvHref = `/${cvFile}`;
 
   return (
     <Container>
@@ -26,8 +30,10 @@ const Introduction = () => {
 
             <Link
               className={buttonVariants({ variant: "secondary" })}
-              href="/cv-tarre.pdf"
+              href={cvHref}
               target="_blank"
+              download={cvFile}
+              aria-label={t("download_cv")}
             >
               <Paperclip className="mr-2" /> {t("download_cv")}
             </Link>

@@ -141,7 +141,7 @@ export function getDataPortfolio(locale: Locale) {
     },
     {
       id: 7,
-      title: locale === "es" ? "OpenCook Pagos" : "OpenCook Pagos",
+      title: locale === "es" ? "Pagos" : "Pagos",
       image: "/image-6.jpg",
       urlGithub: "https://github.com/devjorgenino/apppagos",
       urlDemo: "#!",
