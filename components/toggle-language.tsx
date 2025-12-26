@@ -30,10 +30,10 @@ export function ToggleLanguage() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => setLocale("en")}>
-          Inglés
+          {locale === "es" ? "Inglés" : "English"}
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setLocale("es")}>
-          Español
+          {locale === "es" ? "Español" : "Spanish"}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

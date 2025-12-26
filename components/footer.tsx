@@ -25,19 +25,8 @@ const Footer = () => {
   return (
     <footer className="max-w-3xl mx-auto px-4 sm:px-6" role="contentinfo">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-6">
-        <div className="flex justify-center sm:justify-start">
-          <div className="relative w-24 h-24 sm:w-24 sm:h-24">
-            <Link href="#home" className="flex items-center justify-center">
-              {mounted && (
-                <Image
-                  src={logoSrc}
-                  alt="Logo"
-                  fill
-                  className="object-contain"
-                />
-              )}
-            </Link>
-          </div>
+        <div>
+          <h4 className="text-xl font-bold my-0">JN</h4>
         </div>
 
         <nav
