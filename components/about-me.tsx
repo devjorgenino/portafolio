@@ -23,7 +23,7 @@ const AboutMe = () => {
   const dataSlider = getDataSlider();
 
   return (
-    <div className="p-6 md:px-12 md:py-30 max-w-5xl mx-auto" id="about-me">
+    <div className="p-6 md:px-12 md:py-24 max-w-5xl mx-auto" id="about-me">
       <Title title={t("about_title")} subtitle={t("about_sub")} />
 
       <div className="grid md:grid-cols-2 gap-8">

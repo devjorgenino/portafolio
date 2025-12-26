@@ -11,7 +11,7 @@ const Experience = () => {
   const dataExperience = getDataExperience(locale);
 
   return (
-    <div className="p-6 md:px-12 md:py-44 max-w-5xl mx-auto">
+    <div className="p-6 md:px-12 md:py-24 max-w-5xl mx-auto">
       <Title
         title={locale === "es" ? "Habilidades" : "Skills"}
         subtitle={locale === "es" ? "Mis habilidades" : "My skills"}
